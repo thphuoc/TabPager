@@ -168,7 +168,7 @@ extension TabPageViewController {
                                       multiplier: 1.0,
                                       constant: 0.0)
 
-        let right = NSLayoutConstraint(item: view ?? <#default value#>,
+        let right = NSLayoutConstraint(item: tabView,
                                        attribute: .trailing,
                                        relatedBy: .equal,
                                        toItem: tabView,
@@ -212,7 +212,7 @@ extension TabPageViewController {
                                       multiplier: 1.0,
                                       constant: 0.0)
 
-        let right = NSLayoutConstraint(item: view ?? <#default value#>,
+        let right = NSLayoutConstraint(item: statusView,
                                        attribute: .trailing,
                                        relatedBy: .equal,
                                        toItem: statusView,

@@ -46,12 +46,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2EAC041125B5B10C00B26942 /* TabPageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TabPageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EAC041225B5B10C00B26942 /* TabPageViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TabPageViewControllerDemo.app; path = "/Users/tranhuuphuoc/Documents/TabPageViewController/build/Debug-iphoneos/TabPageViewControllerDemo.app"; sourceTree = "<absolute>"; };
 		4C2122AA1E6E8AF300572DBD /* TabCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCollectionCell.swift; sourceTree = "<group>"; };
 		4C2122AB1E6E8AF300572DBD /* TabCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabCollectionCell.xib; sourceTree = "<group>"; };
 		4C2122AC1E6E8AF300572DBD /* TabPageOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageOption.swift; sourceTree = "<group>"; };
 		4C2122AE1E6E8AF300572DBD /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		4C2122AF1E6E8AF300572DBD /* TabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabView.xib; sourceTree = "<group>"; };
-		4C2122CF1E6E8E9700572DBD /* TabPageViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TabPageViewControllerDemo.app; path = "/Users/tranhuuphuoc/Documents/TabPageViewController/build/Debug-iphoneos/TabPageViewControllerDemo.app"; sourceTree = "<absolute>"; };
 		4C2122E31E6E8FA500572DBD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Demo/TabPageViewControllerDemo/Info.plist; sourceTree = "<group>"; };
 		4C2122E41E6E8FA500572DBD /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = Demo/TabPageViewControllerDemo/ListViewController.swift; sourceTree = "<group>"; };
 		4C2122E51E6E8FA500572DBD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Demo/TabPageViewControllerDemo/ViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		4C2122F51E6E93DF00572DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Demo/TabPageViewControllerDemo/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F8CE39F61F35AE3A00CF74BA /* LimitedTabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LimitedTabPageViewController.swift; path = Demo/TabPageViewControllerDemo/LimitedTabPageViewController.swift; sourceTree = "<group>"; };
 		F8CE39F81F35AE6500CF74BA /* InfiniteTabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfiniteTabPageViewController.swift; path = Demo/TabPageViewControllerDemo/InfiniteTabPageViewController.swift; sourceTree = "<group>"; };
-		OBJ_14 /* TabPageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = TabPageViewController.framework; path = "/Users/tranhuuphuoc/Documents/TabPageViewController/build/Debug-iphoneos/TabPageViewController.framework"; sourceTree = "<absolute>"; };
 		OBJ_9 /* TabPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +121,7 @@
 			children = (
 				4C2122CA1E6E8E5C00572DBD /* Demo */,
 				OBJ_7 /* Sources */,
+				2EAC041125B5B10C00B26942 /* TabPageViewController.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,7 +167,7 @@
 			);
 			name = TabPageViewControllerDemo;
 			productName = TabPageViewControllerDemo;
-			productReference = 4C2122CF1E6E8E9700572DBD /* TabPageViewControllerDemo.app */;
+			productReference = 2EAC041225B5B10C00B26942 /* TabPageViewControllerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		OBJ_16 /* TabPageViewController */ = {
@@ -183,7 +184,7 @@
 			);
 			name = TabPageViewController;
 			productName = TabPageViewController;
-			productReference = OBJ_14 /* TabPageViewController.framework */;
+			productReference = 2EAC041125B5B10C00B26942 /* TabPageViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
