@@ -17,7 +17,7 @@ open class TabPageViewController: UIPageViewController {
         guard let viewController = viewControllers?.first else {
             return nil
         }
-        return tabItems.map{ $0.viewController }.index(of: viewController)
+        return tabItems.map{ $0.viewController }.firstIndex(of: viewController)
     }
     fileprivate var beforeIndex: Int = 0
     fileprivate var tabItemsCount: Int {
@@ -80,7 +80,7 @@ open class TabPageViewController: UIPageViewController {
 
 public extension TabPageViewController {
 
-    public func displayControllerWithIndex(_ index: Int, direction: UIPageViewController.NavigationDirection, animated: Bool) {
+    func displayControllerWithIndex(_ index: Int, direction: UIPageViewController.NavigationDirection, animated: Bool) {
 
         beforeIndex = index
         shouldScrollCurrentBar = false
@@ -168,7 +168,7 @@ extension TabPageViewController {
                                       multiplier: 1.0,
                                       constant: 0.0)
 
-        let right = NSLayoutConstraint(item: view,
+        let right = NSLayoutConstraint(item: view ?? <#default value#>,
                                        attribute: .trailing,
                                        relatedBy: .equal,
                                        toItem: tabView,
@@ -212,7 +212,7 @@ extension TabPageViewController {
                                       multiplier: 1.0,
                                       constant: 0.0)
 
-        let right = NSLayoutConstraint(item: view,
+        let right = NSLayoutConstraint(item: view ?? <#default value#>,
                                        attribute: .trailing,
                                        relatedBy: .equal,
                                        toItem: statusView,
