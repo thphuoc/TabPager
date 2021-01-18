@@ -120,7 +120,7 @@ extension TabPageViewController {
 
     fileprivate func setupScrollView() {
         // Disable PageViewController's ScrollView bounce
-        let scrollView = view.subviews.flatMap { $0 as? UIScrollView }.first
+        let scrollView = view.subviews.compactMap { $0 as? UIScrollView }.first
         scrollView?.scrollsToTop = false
         scrollView?.delegate = self
         scrollView?.backgroundColor = option.pageBackgoundColor
@@ -296,7 +296,7 @@ extension TabPageViewController: UIPageViewControllerDataSource {
 
     fileprivate func nextViewController(_ viewController: UIViewController, isAfter: Bool) -> UIViewController? {
 
-        guard var index = tabItems.map({$0.viewController}).index(of: viewController) else {
+        guard var index = tabItems.map({$0.viewController}).firstIndex(of: viewController) else {
             return nil
         }
 
